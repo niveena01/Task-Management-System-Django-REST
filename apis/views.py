@@ -11,3 +11,4 @@ class TaskViewSet(viewsets.ModelViewSet):
 
     # specify serializer to be used
     serializer_class = TaskSerializers
+

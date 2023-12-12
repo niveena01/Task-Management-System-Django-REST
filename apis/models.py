@@ -9,6 +9,6 @@ class TaskModel(models.Model):
     completed = models.BooleanField(default=False)
     images = models.ImageField(upload_to='images/', default="Image/None/Noimg.jpg")
 
+    def __str__(self):
+        return self.task_name or "Unnamed Task"
 
-def __str__(self):
-    self.task_name
